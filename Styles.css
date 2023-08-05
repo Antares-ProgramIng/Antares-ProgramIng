@@ -1,0 +1,338 @@
+
+/*===============================================[General Styles]===============================================*/
+body{
+    background-image: url("Sources/WebPageSide.png");
+}
+.WebLeftSideDecoration{
+    position: fixed;
+    border-right: solid 20px #000000;
+    border-left: solid 20px #000000;
+    left: 50px;
+    height: 100%;
+    width: 50px;
+}
+.WebRightSideDecoration{
+    position:fixed;
+    border-right: solid 20px #000000;
+    border-left: solid 20px #000000;
+    right: 50px;
+    height: 110%;
+    width: 50px;
+    top: -10px;
+}
+h2.Header{
+    margin: 20px;
+    font-size: 40px;
+}
+h2{
+    margin-left: 20px;
+}
+.CenterText{
+    align-items: center;
+}
+p{
+    margin-left: 20px;
+}
+hr{
+    border-color: #2e2e2e;
+    color: #2e2e2e;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#WebPortfolio{
+    position: fixed;
+    top: 0;
+    width: 77%;
+    margin-left: 200px;
+    height: 100%;
+    background-color: rgb(39, 39, 39);
+}
+/*===============================================[Web Page Banner Styles]===============================================*/
+img#Added{
+    position: fixed;
+    width: 250px;
+    height: 300px;
+    top: 0%;
+    left: 0%;
+}
+span#banner{
+    position: fixed;
+    top: 0%;
+}
+#Flayer {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+h1#PortfolioName{
+    position: fixed;
+    color: rgb(206, 206, 206);
+    text-transform: capitalize;
+    top: -5px;
+    left: 15px;
+}
+.Banner{
+    position: absolute;
+    width: 433px;
+    height: 402px;
+}
+.Banner_Keypad{
+
+    border: 4px solid black;
+    position: fixed;
+    top: 94px;
+    width: 77%;
+    height: 90px;
+}
+img#Banner_KeypadAdded{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    position: fixed;
+    top: 94px;
+    left: 550px;
+    width: 60%;
+    height: 90px;
+}
+img#PageEater{
+    position: fixed;
+    width: 60.7rem;
+    top: -3px;
+    left: 580px;
+}
+/*===============================================[Social Media Banner Styles]===============================================*/
+#SocialMedia{
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+}
+a#mailto{
+    color: aliceblue;
+    text-decoration: none;
+}
+table{
+    margin: 10px;
+    width: 90%;
+}
+td.SocialMediaButton{
+    margin: 10px;
+    padding: 10px;
+}
+/*===============================================[Info Area Styles]===============================================*/
+table.InfoArea tr:nth-child(1){ background-color: #5f5f5f;}
+table.InfoArea tr:nth-child(3){ background-color: #5f5f5f;}
+table.InfoArea tr:nth-child(5){ background-color: #5f5f5f;}
+span#InfoArea{
+    position: absolute;
+    top: 350px;
+    left: 35px;
+    width: 240px;
+    height: 100rem;
+    background-color: rgb(121, 121, 121);
+    border: 4px solid black;
+    border-radius: 20px;
+    box-shadow: 20px 20px rgb(27, 27, 27);
+}
+h2.Info{
+    text-align: center;
+    background-color: #4d4d4d;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 20px;
+
+   
+}
+/*===============================================[Text Area Visibility]===============================================*/
+span.TextArea {
+    display: none;
+    position: absolute;
+}
+/*===============================================[Experience Area Style]===============================================*/
+input#ExperienceBtn {
+    z-index: 1;
+    filter: grayscale();
+    position: fixed;
+    left: 600px;
+    top: 123px;
+    background: #ffffff00;
+    height: 35px;
+    width: 35px;
+}
+img#ExpBtn{
+    z-index: 1;
+    position: fixed;
+    left: 590px;
+    top: 114px;
+    width: 240px;
+    height: 60px;
+}
+input#ExperienceBtn:checked + span.TextArea {
+    z-index: 0;
+    display: block;
+    Position: absolute;
+    top: 250px;
+    left: 600px;
+    width: 55rem;
+    height:auto;
+    margin-bottom: 50px;
+    background-color: rgb(143, 143, 143);
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 20px 20px rgb(27, 27, 27);
+    margin: 20px;
+    padding-bottom: 100px;
+}
+img#ExpImg{
+    position: relative;
+    left: 70px;
+}
+.TimeLine{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    left: 10%;
+    top: 20px;
+    height: 200%;
+    width: 10px;
+    border-radius: 5px;
+    border-color: #2e2e2e;
+    border-width: 5px;
+}
+.TimeLineDot{
+    filter: grayscale();
+    position: relative;
+    right: 14px;
+    background: #ffffff00;
+    height: 31px;
+    width: 31px;
+    clip-path: circle(46% at 51% 50%);
+}
+span.TimeText {
+    display: none;
+    position: relative;
+}
+input.TimeLineDot:hover + span.TimeText {
+    display: block;
+    position: relative;
+    width: 40rem;
+    height: fit-content;
+    background-color: rgb(131, 135, 155);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    border-left-color: rgb(255, 255, 255);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 10px 10px rgb(27, 27, 27);
+    left: 10px;
+}
+input.TimeLineDot:checked + span.TimeText {
+    display: block;
+    position: relative;
+    width: 40rem;
+    height: fit-content;
+    background-color: rgb(140, 148, 196);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    border-left-color: rgb(255, 255, 255);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 10px 10px rgb(27, 27, 27);
+    left: 10px;
+}
+input.TimeLineDot:hover {
+    color:  rgb(99, 113, 190) ;
+}
+/*===============================================[Studies Area Styles]===============================================*/
+input#StudiesBtn {
+    z-index: 1;
+    filter: grayscale();
+    position: fixed;
+    left: 900px;
+    top: 123px;
+    background: #ffffff00;
+    height: 35px;
+    width: 35px;
+}
+img#StdBtn{
+    z-index: 1;
+    position: fixed;
+    left: 890px;
+    top: 114px;
+    width: 240px;
+    height: 60px;
+}
+input#StudiesBtn:Checked + span.TextArea {
+    z-index: 0;
+    display: block;
+    Position: absolute;
+    top: 250px;
+    left: 600px;
+    width: 55rem;
+    height:auto;
+    margin-bottom: 50px;
+    background-color: rgb(143, 143, 143);
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 20px 20px rgb(27, 27, 27);
+    margin: 20px;
+    padding-bottom: 100px;
+}
+img#StdImg{
+    position: relative;
+    Left: 70px;
+}
+/*===============================================[Programs Area Styles]===============================================*/
+input#ProgramsBtn {
+    z-index: 1;
+    filter: grayscale();
+    position: fixed;
+    left: 1200px;
+    top: 123px;
+    background: #ffffff00;
+    height: 35px;
+    width: 35px;
+}
+img#PrgBtn{
+    z-index: 1;
+    position: fixed;
+    left: 1190px;
+    top: 114px;
+    width: 240px;
+    height: 60px;
+}
+input#ProgramsBtn:Checked + span.TextArea {
+    display: block;
+    Position:absolute;
+    top: 250px;
+    left: 600px;
+    width: 55rem;
+    background-color: rgb(143, 143, 143);
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 20px 20px rgb(27, 27, 27);
+    margin: 20px;
+}
+table#ProgramsTable{
+    
+    padding-left: 10px;
+}
+table#ProgramsTable td{
+    column-gap: 10px;
+    padding-left: 10px;
+    background-color: rgb(140, 148, 196);
+    border-radius: 20px;
+    
+}
+img.ProgramIcon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+td.HandledProgram{
+    border: 2px solid black ;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+}
